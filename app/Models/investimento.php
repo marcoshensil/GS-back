@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Insumo extends Model
+class investimento extends Model
 {
     use HasFactory;
 
@@ -13,9 +13,8 @@ class Insumo extends Model
 
     protected $fillable = [
         'nome',
-        'fornecedor',
-        'quantidade',
-        'peso',
+        'tipo',
         'valor',
+        'juros',
     ];
 }

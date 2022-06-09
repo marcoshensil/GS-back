@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'senha' => 'usuarios',
     ],
 
     /*
@@ -88,7 +88,7 @@ return [
 
     'passwords' => [
         'users' => [
-            'provider' => 'users',
+            'provider' => 'usuarios',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

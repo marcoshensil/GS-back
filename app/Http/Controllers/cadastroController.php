@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Insumo;
+use App\Models\Investimento;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-class CadastraController extends Controller
+class cadastroController extends Controller
 {
     public function store(Request $request): JsonResponse
     {
         $dados = $request->except('_token');
 
-        $insumo = Insumo::create($dados);
+        $insumo = investimento::create($dados);
 
-        return response()->json($insumo);
+        return response()->json($investimento);
     }
 }
