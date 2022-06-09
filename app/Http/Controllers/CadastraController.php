@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Insumo;
+use App\Models\investimento;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -12,8 +12,8 @@ class CadastraController extends Controller
     {
         $dados = $request->except('_token');
 
-        $insumo = Insumo::create($dados);
+        $investimento = investimento::create($dados);
 
-        return response()->json($insumo);
+        return response()->json($investimento);
     }
 }
